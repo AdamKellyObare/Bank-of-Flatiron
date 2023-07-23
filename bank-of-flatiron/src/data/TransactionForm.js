@@ -1,11 +1,12 @@
-// TransactionForm.jsx
+
 import React, { useState } from "react";
 
 const TransactionForm = ({ addTransaction }) => {
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
-
+//This code is meant to take control over the Submit Event on clicking the Submit Button.
   const handleSubmit = (event) => {
+    //the prevent Default is added so as to counter the refreshing of the page on submitting inputted data.
     event.preventDefault();
     const newTransaction = {
       description,
