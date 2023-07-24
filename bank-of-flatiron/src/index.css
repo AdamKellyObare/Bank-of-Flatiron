@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+table{
+  width:70%;
+  
+}
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+tr td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ tr th {
+  background-color: #f2f2f2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

@@ -20,7 +20,10 @@ sudo npm install -g json-server
 npm install json-server
 
 3. Open a new Terminal in the same folder
-json-server --watch db.json
+npm run server
+
+4.Open a new terminal and run 
+npm start
 
 # Technology Used
 -React Javascript

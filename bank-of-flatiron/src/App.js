@@ -10,7 +10,7 @@ function App() {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   useEffect(()=>{
-    fetch('http://localhost:3000/transactions')
+    fetch('http://localhost:4000/transactions')
     .then(response => response.json())
     .then(data => {
       // Process the retrieved data here
@@ -20,7 +20,7 @@ function App() {
       // Handle any errors that occur during the fetch request
       console.error('Error:', error);
     });
-  })
+  },[])
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);

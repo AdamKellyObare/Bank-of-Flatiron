@@ -1,12 +1,11 @@
-
+// TransactionForm.jsx
 import React, { useState } from "react";
 
 const TransactionForm = ({ addTransaction }) => {
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
-//This code is meant to take control over the Submit Event on clicking the Submit Button.
+
   const handleSubmit = (event) => {
-    //the prevent Default is added so as to counter the refreshing of the page on submitting inputted data.
     event.preventDefault();
     const newTransaction = {
       description,
@@ -18,13 +17,14 @@ const TransactionForm = ({ addTransaction }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ backgroundColor: "lightblue", padding: "10px", borderRadius: "10px",justifyContent:"space-evenly" }}>
       <label>
         Description:
         <input
           type="text"
           value={description}
           onChange={(event) => setDescription(event.target.value)}
+          style={{ marginBottom: "10px", backgroundColor: "lavender" }}
         />
       </label>
       <label>
@@ -33,11 +33,16 @@ const TransactionForm = ({ addTransaction }) => {
           type="number"
           value={amount}
           onChange={(event) => setAmount(parseFloat(event.target.value))}
+          style={{ marginBottom: "10px", backgroundColor: "lavender" }}
         />
       </label>
-      <button type="submit">Add Transaction</button>
+      <button type="submit" style={{  boxshadow: "0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)" ,borderradius: "12px", backgroundColor: "purple", color: "white", borderRadius: "5px", padding: "5px 10px" }}>
+        Add Transaction
+      </button>
     </form>
   );
 };
 
 export default TransactionForm;
+
+
