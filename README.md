@@ -57,6 +57,7 @@ Create a new project folder.
 Create a new GitHub repository (NB: ENSURE IT IS PRIVATE).
 Add your TM as a contributor to the project. (This is only for grading purposes. We promise we won't steal your code)
 Please make sure you regularly commit to the repository.
-
+#Netify deplyment link
+https://reliable-capybara-4c4201.netlify.app/
 # Known Errors
 None.
